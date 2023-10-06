@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    text-align: left; /* Align text to the left */
+    margin-top: 20px;
+}
+
+.col-1 h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.col-1 h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.col-1 h3 {
+    font-size: 24px;
+    color: red;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+    font-size: 20px;
+    color: gray;
+    font-weight: 100;
+    margin: 30px 0;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: black;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 .controller {
+    width: 90%;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.color-box {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    right: 0;
+    top: 0;
+    border-radius: 20px 0 0 20px;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.content {
+    display: none;
+}
+
+#education.th,td{
+    width: 10%;
+    height: 20%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project{
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+}
+
+.Skills{
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.python {width: 90%; background-color:rgba(0, 21, 255, 0.5);}
+.javascript {width: 90%; background-color:rgba(0, 21, 255, 0.5);}
+.html {width: 90%; background-color:rgba(0, 21, 255, 0.5);}
+.css {width: 90%; background-color:rgba(0, 21, 255, 0.5);}
+.mysql {width: 90%; background-color:rgba(0, 21, 255, 0.5);}
+
